@@ -1,0 +1,46 @@
+#blog1 > p {
+    color: blue;
+    font-family: "Courier New", monospace;
+    text-align: center
+}
+
+#blog2 > p {
+    color: green;
+    text-align: justify;
+    font-family: "Courier New", monospace;
+}
+
+/*pseudo class for hovering*/
+#blog2 p:hover {
+    text-decoration-line: underline;
+    text-align: center;
+    color: hsl(15, 100%, 50%, 90%);
+}
+
+#blog2 {
+    width: 50%;
+    /*margin: auto;*/
+    padding: 8px;
+    border: 4px solid green;
+}
+
+.photo_blog2 {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    /*float: left;*/
+    align-content: center;
+}
+
+p.navigation {
+    margin: auto;
+    border: 4px solid red;
+}
+
+h2.navigation {
+    margin-left: 20px;
+}
+
+#header1 {
+    color: green;
+}
