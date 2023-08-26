@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The app was bootstrapped with this command:
+
 `npm init react-app first-react-app`
 
 ## Available Scripts
