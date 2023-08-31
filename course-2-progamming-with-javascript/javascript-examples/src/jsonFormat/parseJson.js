@@ -5,3 +5,4 @@ let dataParsed = JSON.parse(data);
 dataParsed.greeting = dataParsed['greeting'];
 console.log(dataParsed['greeting']);
 console.log(dataParsed.greeting);
+

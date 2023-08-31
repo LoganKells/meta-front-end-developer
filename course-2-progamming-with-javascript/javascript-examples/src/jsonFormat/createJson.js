@@ -9,3 +9,11 @@ const data = {
 
 let dataJson = JSON.stringify(data);
 console.log(dataJson);
+
+const dataWithNull = {
+    pointA: "null"
+}
+let dataWithNullJson = JSON.stringify(dataWithNull);
+console.log(dataWithNullJson);
+let dataWithNullParsed = JSON.parse(dataWithNullJson)
+console.log(dataWithNullParsed)
