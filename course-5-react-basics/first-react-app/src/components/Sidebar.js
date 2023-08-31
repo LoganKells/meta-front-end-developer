@@ -2,7 +2,7 @@ function Sidebar() {
     return (
 
         <aside
-            className='sidebar-component'>
+            className='sidebarRight roundBorder'>
             <h2>Sidebar content here</h2>
         </aside>
     )

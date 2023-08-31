@@ -9,7 +9,7 @@ function DisplayLogin(props) {
     let message
     props.status ? message = 'You are currently logged in' : message = 'Please login to view this page'
     return (
-        <h2 id='displayLogin'>
+        <h2 className={'roundBorder header'}>
             {message}
         </h2>
     )

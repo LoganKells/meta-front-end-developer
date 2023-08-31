@@ -5,7 +5,7 @@ function Main(props) {
     //     fontWeight: 'bold',
     // }
     return (
-        <main>
+        <main className={'roundBorder mainContent'}>
             <h2>
                 {props.greeting}, How are you?
             </h2>

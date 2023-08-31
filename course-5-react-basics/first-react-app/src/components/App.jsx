@@ -32,10 +32,9 @@ function App() {
         <div className='App'>
             <Heading title='This is a title'
                      color='purple' />
-            <DisplayLogin id='displayLogin' status={false} />
+            <DisplayLogin status={false} />
 
-
-            <div id='content'>
+            <div className='content'>
                 <Main greeting='Anna' />
                 <Sidebar />
             </div>

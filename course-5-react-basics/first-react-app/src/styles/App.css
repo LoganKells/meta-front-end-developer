@@ -14,7 +14,7 @@
 /*    margin-top: 10px;*/
 /*}*/
 
-main {
+.mainContent {
     width: calc(70% - 10px);
     background: lightgoldenrodyellow;
 }
@@ -25,24 +25,24 @@ main {
 /*    margin: 20px;*/
 /*}*/
 
-#content {
+.content {
     display: flex;
     flex-direction: row;
     min-height: calc(100vh - 160px);
 }
 
-aside {
+.sidebarRight {
     background: azure;
     width: calc(30% - 10px);
     margin-left: 10px;
 }
 
-header, #displayLogin {
+.header {
     background: wheat;
     height: 70px;
 }
 
-aside, main, header, #displayLogin {
+.roundBorder {
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 20px;
