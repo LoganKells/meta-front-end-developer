@@ -5,6 +5,7 @@ import { Main } from './Main'
 import { Nav } from './Nav'
 import { Sidebar } from './Sidebar'
 import { Promo } from './Promo'
+import { DisplayLogin } from './DisplayLogin'
 
 /**
  * This component is used to apply highlighting styles
@@ -31,6 +32,9 @@ function App() {
         <div className='App'>
             <Heading title='This is a title'
                      color='purple' />
+            <DisplayLogin id='displayLogin' status={false} />
+
+
             <div id='content'>
                 <Main greeting='Anna' />
                 <Sidebar />

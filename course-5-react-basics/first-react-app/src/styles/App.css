@@ -19,12 +19,16 @@ main {
     background: lightgoldenrodyellow;
 }
 
+/*#displayLogin {*/
+/*    width: calc(100% - 40px);*/
+/*    background: lightgoldenrodyellow;*/
+/*    margin: 20px;*/
+/*}*/
+
 #content {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
     min-height: calc(100vh - 160px);
-
 }
 
 aside {
@@ -33,12 +37,12 @@ aside {
     margin-left: 10px;
 }
 
-header {
+header, #displayLogin {
     background: wheat;
     height: 70px;
 }
 
-aside, main, header {
+aside, main, header, #displayLogin {
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 20px;
