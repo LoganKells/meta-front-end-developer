@@ -6,11 +6,11 @@ function Heading(props) {
 
     // This return is a JSX element.
     return (
-        <header className={'roundBorder header'}>
+        <div className={'roundBorder header'}>
             <h2>
                 {title}, {props.color}
             </h2>
-        </header>
+        </div>
     )
 }
 
