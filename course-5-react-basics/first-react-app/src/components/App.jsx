@@ -1,29 +1,8 @@
-import logo from '../logo.svg'
 import '../styles/App.css'
 import { Heading } from './Heading'
 import { Main } from './Main'
-import { Nav } from './Nav'
 import { Sidebar } from './Sidebar'
-import { Promo } from './Promo'
 import { DisplayLogin } from './DisplayLogin'
-
-/**
- * This component is used to apply highlighting styles
- * to any child component.
- * */
-function Highlighter(props) {
-    const highlightStyles = {
-        background: 'yellow', padding: '10px',
-        fontWeight: 'bold',
-    }
-    return (
-        // props.children is generic for any child React component nested
-        // in the parent Highlighter component.
-        <div style={highlightStyles}>
-            {props.children}
-        </div>
-    )
-}
 
 function App() {
     return (
