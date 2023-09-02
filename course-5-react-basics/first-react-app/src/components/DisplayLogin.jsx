@@ -14,13 +14,15 @@ import { LoginButton } from './LoginButton'
  **/
 function DisplayLogin(props) {
     let loggedIn = props.status
-    console.log('loggedIn: ', loggedIn)
     let message
+    let displayValueBtn
+    const loggedInBtnValue = 'Logout'
+    const loggedOutBtnValue = 'Login'
+
+    // Values based on login status
     loggedIn ? message = 'You are currently logged in' :
         message = 'Please login to view this page'
-
-    let displayValueBtn
-    loggedIn ? displayValueBtn = 'Logout' : displayValueBtn = 'Login'
+    loggedIn ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
 
     let internalClickHandler = () => {
         loggedIn = !loggedIn
