@@ -1,21 +1,12 @@
-function clickHandler(loggedIn) {
-    loggedIn = !loggedIn
-}
-
 function LoginButton(props) {
-    let loggedIn = props.status
-    let internalClickHandler = () => {
-        loggedIn = !loggedIn
-        console.log('Login button clicked')
-        console.log('loggedIn: ', loggedIn)
-    }
+
     return (
         <div>
             <button className={'loginButton'}
                     type='button'
-                    onClick={internalClickHandler}
+                    onClick={props.onClick}
             >
-                Login
+                {props.displayValue}
             </button>
         </div>
     )
