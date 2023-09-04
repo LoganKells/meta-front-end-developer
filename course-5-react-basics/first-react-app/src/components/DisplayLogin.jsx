@@ -1,4 +1,5 @@
 import { LoginButton } from './LoginButton'
+import { useState } from 'react'
 
 // function externalClickHandler() {
 //     console.log('Login button clicked')
@@ -13,7 +14,7 @@ import { LoginButton } from './LoginButton'
  If `status` is false, the component should display: "Please login in to view this page!"
  **/
 function DisplayLogin(props) {
-    let loggedIn = props.status
+    let [loggedIn, setLoggedIn] = useState(props.status)
     let message
     let displayValueBtn
     const loggedInBtnValue = 'Logout'
@@ -24,8 +25,8 @@ function DisplayLogin(props) {
         message = 'Please login to view this page'
     loggedIn ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
 
-    let internalClickHandler = () => {
-        loggedIn = !loggedIn
+    function internalClickHandler() {
+        setLoggedIn(!loggedIn)
         console.log('Login button clicked')
         console.log('loggedIn: ', loggedIn)
     }
