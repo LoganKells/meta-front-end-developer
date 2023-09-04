@@ -11,7 +11,7 @@ function App() {
         <div className='App'>
             <Heading title='This is a title'
                      color='purple' />
-            <DisplayLogin status={false} />
+            <DisplayLogin status={true} />
 
             <div className='content'>
                 <Main greeting='Anna' />
