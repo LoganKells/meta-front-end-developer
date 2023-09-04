@@ -6,7 +6,7 @@ import { DisplayLogin } from './DisplayLogin'
 import { useState } from 'react'
 
 function App() {
-    let [loggedIn, setLoggedIn] = useState(true)
+    const [loggedIn, setLoggedIn] = useState(true)
     return (
         // Must use className in JSX, not class
         // which is already a Javascript keyword.

@@ -1,5 +1,4 @@
 import { LoginButton } from './LoginButton'
-import { useState } from 'react'
 
 // function externalClickHandler() {
 //     console.log('Login button clicked')
@@ -18,11 +17,14 @@ function DisplayLogin(props) {
     let displayValueBtn
     const loggedInBtnValue = 'Logout'
     const loggedOutBtnValue = 'Login'
+    const loggedInMessageValue = 'You are currently logged in'
+    const loggedOutMessageValue = 'Please login to view this page'
 
     // Values based on login status
-    props.loggedIn ? message = 'You are currently logged in' :
-        message = 'Please login to view this page'
-    props.loggedIn ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
+    props.loggedIn ? message = loggedInMessageValue :
+        message = loggedOutMessageValue
+    props.loggedIn ? displayValueBtn = loggedInBtnValue :
+        displayValueBtn = loggedOutBtnValue
 
     function internalClickHandler() {
         props.loggedInDispatch(!props.loggedIn)
@@ -39,11 +41,8 @@ function DisplayLogin(props) {
                          onClick={internalClickHandler}
                          displayValue={displayValueBtn}
             />
-
         </div>
-
     )
-
 }
 
 export { DisplayLogin }
