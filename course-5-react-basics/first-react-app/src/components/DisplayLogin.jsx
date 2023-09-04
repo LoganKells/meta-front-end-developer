@@ -20,14 +20,14 @@ function DisplayLogin(props) {
     const loggedOutBtnValue = 'Login'
 
     // Values based on login status
-    props.status ? message = 'You are currently logged in' :
+    props.loggedIn ? message = 'You are currently logged in' :
         message = 'Please login to view this page'
-    props.status ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
+    props.loggedIn ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
 
     function internalClickHandler() {
-        props.dispatch(!props.status)
+        props.loggedInDispatch(!props.loggedIn)
         console.log('Login button clicked')
-        console.log('loggedIn: ', props.status)
+        console.log('loggedIn: ', props.loggedIn)
     }
 
     return (
@@ -35,7 +35,7 @@ function DisplayLogin(props) {
             <h2>
                 {message}
             </h2>
-            <LoginButton status={props.status}
+            <LoginButton status={props.loggedIn}
                          onClick={internalClickHandler}
                          displayValue={displayValueBtn}
             />

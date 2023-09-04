@@ -13,7 +13,7 @@ function App() {
         <div className='App'>
             <Heading title='This is a title'
                      color='purple' />
-            <DisplayLogin status={loggedIn} dispatch={setLoggedIn} />
+            <DisplayLogin loggedIn={loggedIn} loggedInDispatch={setLoggedIn} />
 
             <div className='content'>
                 <Main greeting='Anna' />
