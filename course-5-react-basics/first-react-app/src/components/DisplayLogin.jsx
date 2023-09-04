@@ -14,21 +14,20 @@ import { useState } from 'react'
  If `status` is false, the component should display: "Please login in to view this page!"
  **/
 function DisplayLogin(props) {
-    let [loggedIn, setLoggedIn] = useState(props.status)
     let message
     let displayValueBtn
     const loggedInBtnValue = 'Logout'
     const loggedOutBtnValue = 'Login'
 
     // Values based on login status
-    loggedIn ? message = 'You are currently logged in' :
+    props.status ? message = 'You are currently logged in' :
         message = 'Please login to view this page'
-    loggedIn ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
+    props.status ? displayValueBtn = loggedInBtnValue : displayValueBtn = loggedOutBtnValue
 
     function internalClickHandler() {
-        setLoggedIn(!loggedIn)
+        props.dispatch(!props.status)
         console.log('Login button clicked')
-        console.log('loggedIn: ', loggedIn)
+        console.log('loggedIn: ', props.status)
     }
 
     return (
@@ -36,7 +35,7 @@ function DisplayLogin(props) {
             <h2>
                 {message}
             </h2>
-            <LoginButton status={loggedIn}
+            <LoginButton status={props.status}
                          onClick={internalClickHandler}
                          displayValue={displayValueBtn}
             />

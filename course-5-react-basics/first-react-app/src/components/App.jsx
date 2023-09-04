@@ -3,15 +3,17 @@ import { Heading } from './Heading'
 import { Main } from './Main'
 import { Sidebar } from './Sidebar'
 import { DisplayLogin } from './DisplayLogin'
+import { useState } from 'react'
 
 function App() {
+    let [loggedIn, setLoggedIn] = useState(true)
     return (
         // Must use className in JSX, not class
         // which is already a Javascript keyword.
         <div className='App'>
             <Heading title='This is a title'
                      color='purple' />
-            <DisplayLogin status={true} />
+            <DisplayLogin status={loggedIn} dispatch={setLoggedIn} />
 
             <div className='content'>
                 <Main greeting='Anna' />
