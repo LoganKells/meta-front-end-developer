@@ -52,6 +52,17 @@ h2 {
     font-size: 20px;
 }
 
+nav {
+    background: #ee9972;
+}
+
+.nav-item {
+    color: #edefee;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
 /*.App-logo {*/
 /*    height: 40vmin;*/
 /*    pointer-events: none;*/

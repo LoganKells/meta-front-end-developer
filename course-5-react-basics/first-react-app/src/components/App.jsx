@@ -10,7 +10,7 @@ function App() {
         // Must use className in JSX, not class
         // which is already a Javascript keyword.
         <div className='App'>
-            <nav className='nav'>
+            <nav className='nav roundBorder'>
                 <Link to={'/'} className={'nav-item'}>Homepage</Link>
                 <Link to={'/promo'} className={'nav-item'}>Promo</Link>
             </nav>
