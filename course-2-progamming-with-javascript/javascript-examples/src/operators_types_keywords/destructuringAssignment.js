@@ -70,14 +70,14 @@ console.log('g:', g);
 // Destructuring values in an array
 console.log("------------ 4 ------------")
 let [a, b] = [1, 2, 3, 4, 5];
-console.log(a, b);
+console.log('a:', a, 'b:', b);
 // You can end a destructuring pattern with a
 // rest property ...rest.
 // This pattern will store all remaining
 // properties of the object or array into a new object or array.
 let rest;
 [a, b, ...rest] = [10, 20, 30, 40, 50];
-console.log(rest); // Array [30, 40, 50]
+console.log('a:', a, 'b:', b, 'rest:', rest); // Array [30, 40, 50]
 
 
 
