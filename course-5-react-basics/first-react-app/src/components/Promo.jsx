@@ -1,22 +1,5 @@
-function Discount() {
-    return (
-        <div>
-            <h2>
-                Congrats, a 30% discount will be applied at checkout!
-            </h2>
-        </div>
-    )
-}
-
-function OfferDiscount() {
-    return (
-        <div>
-            <h2>
-                Please log in to get a 30% discount!
-            </h2>
-        </div>
-    )
-}
+import { Discount } from './Discount'
+import { OfferDiscount } from './OfferDiscount'
 
 function Promo(props) {
     let message
