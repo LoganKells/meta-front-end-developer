@@ -1,9 +1,4 @@
 function Main(props) {
-    // let textStyle = {
-    //     color: 'red',
-    //     backgroundColor: 'lightblue',
-    //     fontWeight: 'bold',
-    // }
     return (
         <main className={'roundBorder mainContent'}>
             <h2>
