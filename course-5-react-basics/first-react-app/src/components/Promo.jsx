@@ -1,12 +1,33 @@
-function Promo() {
+function Discount() {
+    return (
+        <div>
+            <h2>
+                Congrats, a 30% discount will be applied at checkout!
+            </h2>
+        </div>
+    )
+}
+
+function OfferDiscount() {
+    return (
+        <div>
+            <h2>
+                Please log in to get a 30% discount!
+            </h2>
+        </div>
+    )
+}
+
+function Promo(props) {
+    let message
+    if (props.loggedIn) {
+        message = <Discount />
+    } else {
+        message = <OfferDiscount />
+    }
     return (
         <div className='promo-section'>
-            <div>
-                <h1>Don't miss this deal!</h1>
-            </div>
-            <div>
-                <h2>Subscribe to my newsletter and get all the shop items at 50% off!</h2>
-            </div>
+            {message}
         </div>
     )
 }

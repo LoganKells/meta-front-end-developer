@@ -13,7 +13,7 @@ function Homepage(props) {
                           loggedInDispatch={props.setLoggedIn} />
 
             <div className='content'>
-                <Main greeting='Anna' />
+                <Main username='Anna' loggedIn={props.loggedIn} />
                 <Sidebar />
             </div>
         </div>

@@ -22,7 +22,7 @@ function App() {
                     />
                 }
                 />
-                <Route path='/promo' element={<Promo />} />
+                <Route path='/promo' element={<Promo loggedIn={loggedIn} />} />
             </Routes>
         </div>
     )

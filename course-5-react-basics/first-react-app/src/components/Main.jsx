@@ -1,9 +1,11 @@
+import { WelcomeUser } from './WelcomeUser'
+
 function Main(props) {
     return (
         <div className={'roundBorder mainContent'}>
-            <h2>
-                {props.greeting}, How are you?
-            </h2>
+            <WelcomeUser
+                loggedIn={props.loggedIn}
+                username={props.username} />
         </div>
     )
 }
