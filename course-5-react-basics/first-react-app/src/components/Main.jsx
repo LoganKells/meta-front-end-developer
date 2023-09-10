@@ -1,4 +1,5 @@
 import { WelcomeUser } from './WelcomeUser'
+import { Video } from './Video'
 
 function Main(props) {
     return (
@@ -6,6 +7,8 @@ function Main(props) {
             <WelcomeUser
                 loggedIn={props.loggedIn}
                 username={props.username} />
+
+            <Video url={'https://youtu.be/i1CmOHfALTE'} />
         </div>
     )
 }
