@@ -1,17 +1,17 @@
 // storeManager is an Object Literal.
-var storeManager = {};
-storeManager.movement = 4;
-storeManager.socialSkills = 50;
-console.log(storeManager.socialSkills);
+var storeManager = {}
+storeManager.movement = 4
+storeManager.socialSkills = 50
+console.log(storeManager.socialSkills)
 
 var storeManagerKeyValue = {
     movement: 4,
     socialSkills: 50,
-};
-storeManagerKeyValue.health = 100;
+}
+storeManagerKeyValue.health = 100
 
-console.log(storeManagerKeyValue.socialSkills);
-console.log(storeManagerKeyValue.health);
+console.log(storeManagerKeyValue.socialSkills)
+console.log(storeManagerKeyValue.health)
 
 // -----------------------
 // Dot notation object implementation
@@ -25,26 +25,26 @@ Task:
        keys to the object with values from your imagination.
     2. Log out the name and health of your villain.
 */
-villain.name = "Mark";
-villain.age = 56;
-villain.weapon = "sword";
-villain.aim = 70;
-villain.health = 100;
-console.log(`Villain name: ${villain.name} and health: ${villain.health}`);
+villain.name = 'Mark'
+villain.age = 56
+villain.weapon = 'sword'
+villain.aim = 70
+villain.health = 100
+console.log(`Villain name: ${villain.name} and health: ${villain.health}`)
 
 // -----------------------
 // Brackets notation
 let castle = {}
-let priceKey = 'price';
-let colorKey = 'color';
-castle[priceKey] = 2_000_000;
+let priceKey = 'price'
+let colorKey = 'color'
+castle[priceKey] = 2_000_000
 castle[colorKey] = 'pink'
-console.log(castle[priceKey]);
-console.log(castle[colorKey]);
+console.log(castle[priceKey])
+console.log(castle[colorKey])
 
 // Cannot use variable name for dot notation.
 // Dot notation uses the string itself.
-console.log(castle.price);
+console.log(castle.price)
 
 // -----------------------
 // Updating objects
@@ -66,12 +66,12 @@ console.log(castle.price);
 */
 function updateValue(obj, key, value) {
     // Cannot use dot notation like obj.key because it is actually obj.price.
-    obj[key] = value;
+    obj[key] = value
 }
-updateValue(castle, 'price', 3_000_000);
-updateValue(castle, 'color', 'Lime Green');
-console.log(castle.price);
-console.log(castle.color);
+updateValue(castle, 'price', 3_000_000)
+updateValue(castle, 'color', 'Lime Green')
+console.log(castle.price)
+console.log(castle.color)
 
 /**
 Task:
@@ -94,14 +94,14 @@ their fleet of vehicles.
 5. Log out the entire object.
 */
 function vehicleFleet() {
-    let hireCar = {};
-    hireCar.color = 'black';
-    hireCar.isConvertible = false;
-    hireCar['number of doors'] = 4;
-    console.log(hireCar);
+    let hireCar = {}
+    hireCar.color = 'black'
+    hireCar.isConvertible = false
+    hireCar['number of doors'] = 4
+    console.log(hireCar)
     console.log(hireCar['number of doors'])
 }
-vehicleFleet();
+vehicleFleet()
 
 // Copying or Cloning objects
 const freelancerDev = {
@@ -109,5 +109,5 @@ const freelancerDev = {
     daysWorked: 26,
     dayRate: 300,
 }
-const myFriend = structuredClone(freelancerDev);
-console.log(Object.entries(myFriend));
+const myFriend = structuredClone(freelancerDev)
+console.log(Object.entries(myFriend))

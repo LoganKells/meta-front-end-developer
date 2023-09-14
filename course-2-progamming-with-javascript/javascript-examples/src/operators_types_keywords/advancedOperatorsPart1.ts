@@ -11,15 +11,15 @@ Use "console.log()" to log out whether or not your main character is at the
 Hint: Use the && operator in combination with <, and >.
 */
 
-const score = 73;
+const score = 73
 
 function getSkillLevel(score: number): boolean {
-    const min: number = 70;
-    const max: number = 79;
-    return min < score && score < max;
+    const min: number = 70
+    const max: number = 79
+    return min < score && score < max
 }
 
-console.log("Guru Level: " + getSkillLevel(score));
+console.log('Guru Level: ' + getSkillLevel(score))
 
 /*
 Task 2: Using the logical || operator
@@ -35,16 +35,16 @@ Use the console.log() to log our whether or not the game is over. The expected o
 
 */
 
-var timeRemaining: number = 0;
-var energy: number = 10;
+var timeRemaining: number = 0
+var energy: number = 10
 
 function isGameOver(timeRem: number, energyRem: number): boolean {
-    const timeRemainingLimit: number = 0;
-    const energyRemainingLimit: number = 0;
-    return timeRem <= timeRemainingLimit || energyRem <= energyRemainingLimit;
+    const timeRemainingLimit: number = 0
+    const energyRemainingLimit: number = 0
+    return timeRem <= timeRemainingLimit || energyRem <= energyRemainingLimit
 }
 
-console.log("Game Over: " + isGameOver(timeRemaining, energy));
+console.log('Game Over: ' + isGameOver(timeRemaining, energy))
 
 /* Task 3: Using the modulus operator, %, to test if your age is even or odd
 
@@ -63,13 +63,13 @@ Once you've written your solution, try changing the "myAge" variable to 5 to tes
 works for both even and odd numbers.
 */
 
-var myAge: number = 31;
+var myAge: number = 31
 
 function isEven(num: number): boolean {
-    return num % 2 === 0;
+    return num % 2 === 0
 }
 
-console.log("I'm " + myAge + " year old. Even: " + isEven(myAge));
+console.log("I'm " + myAge + ' year old. Even: ' + isEven(myAge))
 
 /*
 Task 4: Use the + addition operator to add numbers.
@@ -98,12 +98,12 @@ Quarter Two Profits
     -Candy:      175423
 */
 
-var quarterOneProfit = 152555 + 95543 + 121235;
-var quarterTwoProfit = 164569 + 104072 + 175423;
-var midYearProfit = quarterOneProfit + quarterTwoProfit;
-var totalProfit = midYearProfit;
+var quarterOneProfit = 152555 + 95543 + 121235
+var quarterTwoProfit = 164569 + 104072 + 175423
+var midYearProfit = quarterOneProfit + quarterTwoProfit
+var totalProfit = midYearProfit
 
-console.log("totalProfit:", totalProfit);
+console.log('totalProfit:', totalProfit)
 
 /*
 Task 5: Use the + concatenation operator to combine strings and a number.
@@ -120,12 +120,11 @@ Task 5: Use the + concatenation operator to combine strings and a number.
     console — for example, "Jane Doe is 42 years old."
 */
 
-var firstName = "Logan";
-var lastName = "Kells";
-var age = 31;
+var firstName = 'Logan'
+var lastName = 'Kells'
+var age = 31
 
-console.log(firstName + " " + lastName + " is " + age + " years old.");
-
+console.log(firstName + ' ' + lastName + ' is ' + age + ' years old.')
 
 /*
 Task 6: Use the += operator to accumulate values in a variable.
@@ -147,54 +146,51 @@ Task 6: Use the += operator to accumulate values in a variable.
     it's correct. All three daily reports should appear inside of it.
 */
 
-
 /*-----Variables----------------------------------------------------*/
-var totalSteps = 0;
-var dailyReport = "";
-var reportLog = "";
-
+var totalSteps = 0
+var dailyReport = ''
+var reportLog = ''
 
 /*------Monday-------------------------------------------------------*/
 // The user walks 11505 steps.
 
 // Update totalSteps here.
-totalSteps += 11505;
+totalSteps += 11505
 
-dailyReport = "As of Monday, you walked " + totalSteps + " steps this week. ";
+dailyReport = 'As of Monday, you walked ' + totalSteps + ' steps this week. '
 
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 
 // Update reportLog here.
-reportLog += dailyReport;
+reportLog += dailyReport
 
 /*------Tuesday-------------------------------------------------------*/
 // The user walks 6754 steps.
 
 // Update totalSteps here.
-totalSteps += 6754;
+totalSteps += 6754
 
-dailyReport = "As of Tuesday, you walked " + totalSteps + " steps this week. ";
+dailyReport = 'As of Tuesday, you walked ' + totalSteps + ' steps this week. '
 
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 
 // Update reportLog here.
-reportLog += dailyReport;
-
+reportLog += dailyReport
 
 /*------Wednesday-----------------------------------------------------*/
 // The user walks 7582 steps.
 
 // Update totalSteps here.
-totalSteps += 7582;
+totalSteps += 7582
 
-dailyReport = "As of Wednesday, you walked " + totalSteps + " steps this week. ";
+dailyReport = 'As of Wednesday, you walked ' + totalSteps + ' steps this week. '
 
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 
 // Update reportLog here.
-reportLog += dailyReport;
+reportLog += dailyReport
 
-console.log("1" + 2);
+console.log('1' + 2)

@@ -32,8 +32,8 @@ system that works as follows:
       described above.
 */
 
-var customerAge = 10;
-var movieClubMember = true;
+var customerAge = 10
+var movieClubMember = true
 
 /* Test cases */
 //customerAge= 41; // expected result: $10
@@ -54,17 +54,17 @@ var movieClubMember = true;
 
 /* Write your code below here. */
 if (movieClubMember) {
-    console.log(0);
+    console.log(0)
 } else {
     if (customerAge >= 65) {
-        console.log(7);
+        console.log(7)
     } else if (customerAge >= 14 && customerAge <= 24) {
-        console.log(6);
+        console.log(6)
     } else if (customerAge < 14) {
-        console.log(5);
+        console.log(5)
     } else if (customerAge >= 25 && customerAge <= 64) {
-        console.log(10);
+        console.log(10)
     } else {
-        console.log("invalid input");
+        console.log('invalid input')
     }
 }

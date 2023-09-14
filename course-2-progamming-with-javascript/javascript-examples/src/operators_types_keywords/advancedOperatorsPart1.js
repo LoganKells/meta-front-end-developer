@@ -10,13 +10,13 @@ Use "console.log()" to log out whether or not your main character is at the
 
 Hint: Use the && operator in combination with <, and >.
 */
-var score = 73;
+var score = 73
 function getSkillLevel(score) {
-    var min = 70;
-    var max = 79;
-    return min < score && score < max;
+    var min = 70
+    var max = 79
+    return min < score && score < max
 }
-console.log("Guru Level: " + getSkillLevel(score));
+console.log('Guru Level: ' + getSkillLevel(score))
 /*
 Task 2: Using the logical || operator
 Imagine you are coding a video game. Currently, you’re about to code some snippets
@@ -30,14 +30,14 @@ Use the console.log() to log our whether or not the game is over. The expected o
 "Game Over: true", or "Game Over: false", based upon the values of the variables.
 
 */
-var timeRemaining = 0;
-var energy = 10;
+var timeRemaining = 0
+var energy = 10
 function isGameOver(timeRem, energyRem) {
-    var timeRemainingLimit = 0;
-    var energyRemainingLimit = 0;
-    return timeRem <= timeRemainingLimit || energyRem <= energyRemainingLimit;
+    var timeRemainingLimit = 0
+    var energyRemainingLimit = 0
+    return timeRem <= timeRemainingLimit || energyRem <= energyRemainingLimit
 }
-console.log("Game Over: " + isGameOver(timeRemaining, energy));
+console.log('Game Over: ' + isGameOver(timeRemaining, energy))
 /* Task 3: Using the modulus operator, %, to test if your age is even or odd
 
 You need to code a small program that takes a number and determines if it's an even
@@ -54,11 +54,11 @@ and to "false" if your age is odd. Use the modulus operator, %, to create this e
 Once you've written your solution, try changing the "myAge" variable to 5 to test that it
 works for both even and odd numbers.
 */
-var myAge = 31;
+var myAge = 31
 function isEven(num) {
-    return num % 2 === 0;
+    return num % 2 === 0
 }
-console.log("I'm " + myAge + " year old. Even: " + isEven(myAge));
+console.log("I'm " + myAge + ' year old. Even: ' + isEven(myAge))
 /*
 Task 4: Use the + addition operator to add numbers.
 
@@ -85,11 +85,11 @@ Quarter Two Profits
     -Snacks:     104072
     -Candy:      175423
 */
-var quarterOneProfit = 152555 + 95543 + 121235;
-var quarterTwoProfit = 164569 + 104072 + 175423;
-var midYearProfit = quarterOneProfit + quarterTwoProfit;
-var totalProfit = midYearProfit;
-console.log("totalProfit:", totalProfit);
+var quarterOneProfit = 152555 + 95543 + 121235
+var quarterTwoProfit = 164569 + 104072 + 175423
+var midYearProfit = quarterOneProfit + quarterTwoProfit
+var totalProfit = midYearProfit
+console.log('totalProfit:', totalProfit)
 /*
 Task 5: Use the + concatenation operator to combine strings and a number.
 
@@ -104,10 +104,10 @@ Task 5: Use the + concatenation operator to combine strings and a number.
     log a report about the person. The final result should be a single string in the
     console — for example, "Jane Doe is 42 years old."
 */
-var firstName = "Logan";
-var lastName = "Kells";
-var age = 31;
-console.log(firstName + " " + lastName + " is " + age + " years old.");
+var firstName = 'Logan'
+var lastName = 'Kells'
+var age = 31
+console.log(firstName + ' ' + lastName + ' is ' + age + ' years old.')
 /*
 Task 6: Use the += operator to accumulate values in a variable.
 
@@ -128,35 +128,35 @@ Task 6: Use the += operator to accumulate values in a variable.
     it's correct. All three daily reports should appear inside of it.
 */
 /*-----Variables----------------------------------------------------*/
-var totalSteps = 0;
-var dailyReport = "";
-var reportLog = "";
+var totalSteps = 0
+var dailyReport = ''
+var reportLog = ''
 /*------Monday-------------------------------------------------------*/
 // The user walks 11505 steps.
 // Update totalSteps here.
-totalSteps += 11505;
-dailyReport = "As of Monday, you walked " + totalSteps + " steps this week. ";
+totalSteps += 11505
+dailyReport = 'As of Monday, you walked ' + totalSteps + ' steps this week. '
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 // Update reportLog here.
-reportLog += dailyReport;
+reportLog += dailyReport
 /*------Tuesday-------------------------------------------------------*/
 // The user walks 6754 steps.
 // Update totalSteps here.
-totalSteps += 6754;
-dailyReport = "As of Tuesday, you walked " + totalSteps + " steps this week. ";
+totalSteps += 6754
+dailyReport = 'As of Tuesday, you walked ' + totalSteps + ' steps this week. '
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 // Update reportLog here.
-reportLog += dailyReport;
+reportLog += dailyReport
 /*------Wednesday-----------------------------------------------------*/
 // The user walks 7582 steps.
 // Update totalSteps here.
-totalSteps += 7582;
-dailyReport = "As of Wednesday, you walked " + totalSteps + " steps this week. ";
+totalSteps += 7582
+dailyReport = 'As of Wednesday, you walked ' + totalSteps + ' steps this week. '
 // Console.log the daily report here to check if it's correct.
-console.log(dailyReport);
+console.log(dailyReport)
 // Update reportLog here.
-reportLog += dailyReport;
-console.log("1" + 2);
+reportLog += dailyReport
+console.log('1' + 2)
 //# sourceMappingURL=advancedOperatorsPart1.js.map

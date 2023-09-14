@@ -1,6 +1,6 @@
 function Nav(props) {
     return (
-        <nav className='main-nav'>
+        <nav className="main-nav">
             <ul>
                 <li>{props.first}</li>
                 <li>{props.second}</li>

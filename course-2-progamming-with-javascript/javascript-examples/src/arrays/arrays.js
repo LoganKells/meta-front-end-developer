@@ -5,12 +5,12 @@
 // Push and pop to array
 
 var friendsList = ['Wayne', 'Sara', 'Frankie']
-friendsList.push('Logan');
-console.log(friendsList);
-let last = friendsList.pop(); // last element
-console.log(friendsList, last);
-const first = friendsList.shift(); // first element
-console.log(first, friendsList);
+friendsList.push('Logan')
+console.log(friendsList)
+let last = friendsList.pop() // last element
+console.log(friendsList, last)
+const first = friendsList.shift() // first element
+console.log(first, friendsList)
 
 /*
 Task:
@@ -24,28 +24,28 @@ Task:
     This might be a bit tricky, so I have given you a hint.
 */
 function arrayUpdates() {
-    let gifts = [];
-    gifts.push('gift1');
-    gifts.push('gift1');
-    gifts.push('gift1');
-    gifts.push('gift1');
-    gifts.push('gift1');
-    console.log(`After pushing, gifts: ${gifts}`);
+    let gifts = []
+    gifts.push('gift1')
+    gifts.push('gift1')
+    gifts.push('gift1')
+    gifts.push('gift1')
+    gifts.push('gift1')
+    console.log(`After pushing, gifts: ${gifts}`)
     while (gifts.length > 0) {
-        gifts.pop();
+        gifts.pop()
     }
     console.log(`After popping, gifts: ${gifts}`)
 }
-arrayUpdates();
+arrayUpdates()
 
 /*
-* Task: Use built in method to print items in an array
-* see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods
-* */
+ * Task: Use built in method to print items in an array
+ * see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods
+ * */
 function arrayForEach() {
-    let data = [1, 2, 3, 4, 5];
+    let data = [1, 2, 3, 4, 5]
     data.forEach((n, i) => {
-        console.log(i, n);
+        console.log(i, n)
     })
 }
-arrayForEach();
+arrayForEach()

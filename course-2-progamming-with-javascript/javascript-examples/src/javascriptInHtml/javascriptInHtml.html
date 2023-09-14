@@ -1,44 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Javascript in HTML</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Javascript in HTML</title>
+    </head>
 
-<!--We can edit the DOM in the browser console to add a new h2 element.-->
-<!--const h2const = document.createElement('h2')-->
-<!--undefined-->
-<!--h2const.innerText = "This is console created h2 object."-->
-<!--"This is console created h2 object."-->
-<!--h2const.setAttribute('id', 'sub-heading')-->
-<!--undefined-->
-<!--h2const.setAttribute('class', 'secondary')-->
-<!--undefined-->
-<!--h2const-->
-<!--<h2 id="sub-heading" class="secondary">-->
-<!--document.body.appendChild(h2const)-->
-<!--<h2 id="sub-heading" class="secondary">-->
+    <!--We can edit the DOM in the browser console to add a new h2 element.-->
+    <!--const h2const = document.createElement('h2')-->
+    <!--undefined-->
+    <!--h2const.innerText = "This is console created h2 object."-->
+    <!--"This is console created h2 object."-->
+    <!--h2const.setAttribute('id', 'sub-heading')-->
+    <!--undefined-->
+    <!--h2const.setAttribute('class', 'secondary')-->
+    <!--undefined-->
+    <!--h2const-->
+    <!--<h2 id="sub-heading" class="secondary">-->
+    <!--document.body.appendChild(h2const)-->
+    <!--<h2 id="sub-heading" class="secondary">-->
 
-<body>
-  <div>
-      <p>
-          We can log messages to console using javascript.
-          Check the developer tools > console for a message.
-      </p>
-      <script type="text/javascript">
-          console.log("Hello from script tag")
-      </script>
-      <script>
-          console.log('The type of "text/javascript" is default value.')
-      </script>
-      <script type="module">
-          console.log("Hello from a script type-module.")
-      </script>
-      <script type="module">
-          import { informalGreeting, formalGreeting } from './greetingModules.js';
-          informalGreeting("Jane");
-          formalGreeting("John");
-      </script>
-  </div>
-</body>
+    <body>
+        <div>
+            <p>
+                We can log messages to console using javascript. Check the
+                developer tools > console for a message.
+            </p>
+            <script type="text/javascript">
+                console.log('Hello from script tag')
+            </script>
+            <script>
+                console.log('The type of "text/javascript" is default value.')
+            </script>
+            <script type="module">
+                console.log('Hello from a script type-module.')
+            </script>
+            <script type="module">
+                import {
+                    informalGreeting,
+                    formalGreeting,
+                } from './greetingModules.js'
+                informalGreeting('Jane')
+                formalGreeting('John')
+            </script>
+        </div>
+    </body>
 </html>

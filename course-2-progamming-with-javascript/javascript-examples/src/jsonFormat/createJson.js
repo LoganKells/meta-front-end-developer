@@ -2,18 +2,18 @@
 // Javascript object.
 
 const data = {
-    firstName: "Logan",
-    lastName: "Kells",
-    greeting: "Hello",
-};
+    firstName: 'Logan',
+    lastName: 'Kells',
+    greeting: 'Hello',
+}
 
-let dataJson = JSON.stringify(data);
-console.log(dataJson);
+let dataJson = JSON.stringify(data)
+console.log(dataJson)
 
 const dataWithNull = {
-    pointA: "null"
+    pointA: 'null',
 }
-let dataWithNullJson = JSON.stringify(dataWithNull);
-console.log(dataWithNullJson);
+let dataWithNullJson = JSON.stringify(dataWithNull)
+console.log(dataWithNullJson)
 let dataWithNullParsed = JSON.parse(dataWithNullJson)
 console.log(dataWithNullParsed)

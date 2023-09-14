@@ -1,2 +1,2 @@
-let result = null;
-console.log(result);
+let result = null
+console.log(result)

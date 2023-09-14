@@ -20,11 +20,10 @@ The final results should be the same as if you wrote the following:
         console.log("Count complete!"); */
 function exampleLoop1() {
     for (var i = 0; i <= 100; i++) {
-        console.log(i);
+        console.log(i)
     }
-    console.log("Count complete!");
+    console.log('Count complete!')
 }
-
 
 /* Task 2: Decrementing with a for loop
 
@@ -50,11 +49,10 @@ following:
 */
 function exampleLoop2() {
     for (var i = 60; i > 0; i--) {
-        console.log(i);
+        console.log(i)
     }
-    console.log("Happy New Year!");
+    console.log('Happy New Year!')
 }
-
 
 /* Task 3: Incrementing with a while loop
 
@@ -80,14 +78,13 @@ function exampleLoop2() {
         console.log("Maximum speed reached!");
 */
 function exampleLoop3() {
-    var i = 200;
+    var i = 200
     while (i <= 500) {
-        console.log(i);
-        i++;
+        console.log(i)
+        i++
     }
-    console.log("Maximum speed reached!");
+    console.log('Maximum speed reached!')
 }
-
 
 /* Task 4: Decrementing with a while loop
 
@@ -112,16 +109,15 @@ function exampleLoop3() {
         console.log("The year is over!");
 */
 function exampleLoop4() {
-    var i = 365;
-    while(i >= 1) {
-        console.log(i);
-        i--;
+    var i = 365
+    while (i >= 1) {
+        console.log(i)
+        i--
     }
-    console.log("The year is over!")
+    console.log('The year is over!')
 }
 
-
-let currentYear = 1982;
+let currentYear = 1982
 /* Task 5: Using a while loop with an already-declared variable.
 
     Imagine you're creating a life simulator game. In the game, the player
@@ -146,11 +142,11 @@ let currentYear = 1982;
         console.log("Welcome to the present! The year is " + currentYear + ".");
 */
 function exampleLoop5() {
-    while(currentYear <= 2022) {
-        console.log(currentYear);
-        currentYear++;
+    while (currentYear <= 2022) {
+        console.log(currentYear)
+        currentYear++
     }
-    console.log("Welcome to the present! The year is " + currentYear + ".");
+    console.log('Welcome to the present! The year is ' + currentYear + '.')
 }
 
 /* Challenge
@@ -185,11 +181,10 @@ function exampleLoop5() {
 */
 function exampleLoop6() {
     for (var i = 1; i <= 10; i++) {
-        console.log(`----- ${i} Times Table ----- `);
+        console.log(`----- ${i} Times Table ----- `)
         for (var j = 1; j <= 10; j++) {
-            console.log(`${i} times ${j} equals ${i * j}`);
+            console.log(`${i} times ${j} equals ${i * j}`)
         }
-
     }
 }
 
@@ -214,23 +209,22 @@ function exampleLoop6() {
         "10 divided by 10 equals 1 "
 */
 function exampleLoop7() {
-    for (let i = 100; i >= 10; i-= 10) {
+    for (let i = 100; i >= 10; i -= 10) {
         for (let j = 5; j <= 10; j += 5) {
-            console.log(`${i} divided by ${j} equals ${i / j}`);
+            console.log(`${i} divided by ${j} equals ${i / j}`)
         }
     }
 }
 
 function exampleLoop8() {
-let cubes = 'ABCDEFG';
-//styling console output using CSS with a %c format specifier
+    let cubes = 'ABCDEFG'
+    //styling console output using CSS with a %c format specifier
     for (var i = 0; i < cubes.length; i++) {
-        let styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
-        console.log("%c" + cubes[i], styles)
+        let styles =
+            'font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple'
+        console.log('%c' + cubes[i], styles)
     }
 }
-
-
 
 // Call loop examples
 // exampleLoop1();

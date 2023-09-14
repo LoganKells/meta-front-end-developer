@@ -21,10 +21,12 @@ function DisplayLogin(props) {
     const loggedOutMessageValue = 'Please login to view this page'
 
     // Values based on login status
-    props.loggedIn ? message = loggedInMessageValue :
-        message = loggedOutMessageValue
-    props.loggedIn ? displayValueBtn = loggedInBtnValue :
-        displayValueBtn = loggedOutBtnValue
+    props.loggedIn
+        ? (message = loggedInMessageValue)
+        : (message = loggedOutMessageValue)
+    props.loggedIn
+        ? (displayValueBtn = loggedInBtnValue)
+        : (displayValueBtn = loggedOutBtnValue)
 
     function internalClickHandler() {
         props.loggedInDispatch(!props.loggedIn)
@@ -34,12 +36,11 @@ function DisplayLogin(props) {
 
     return (
         <div className={'roundBorder header'}>
-            <h2>
-                {message}
-            </h2>
-            <LoginButton status={props.loggedIn}
-                         onClick={internalClickHandler}
-                         displayValue={displayValueBtn}
+            <h2>{message}</h2>
+            <LoginButton
+                status={props.loggedIn}
+                onClick={internalClickHandler}
+                displayValue={displayValueBtn}
             />
         </div>
     )

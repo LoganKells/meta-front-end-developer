@@ -3,15 +3,17 @@ function addTwoNums(a, b) {
 }
 
 function randomNum() {
-    return Math.floor((Math.random() * 10) + 1);
+    return Math.floor(Math.random() * 10 + 1)
 }
-function specificNum() { return 42 }
+function specificNum() {
+    return 42
+}
 
-var useRandom = true;
+var useRandom = true
 
-var getNumber;
+var getNumber
 
-if(useRandom) {
+if (useRandom) {
     getNumber = randomNum
 } else {
     getNumber = specificNum
@@ -19,6 +21,5 @@ if(useRandom) {
 
 // addTwoNums(getNumber(), getNumber())
 
-
-addTwoNums(specificNum, specificNum); // returned number is 84
-addTwoNums(specificNum, randomNum); // returned number is 42 + some random number
+addTwoNums(specificNum, specificNum) // returned number is 84
+addTwoNums(specificNum, randomNum) // returned number is 42 + some random number

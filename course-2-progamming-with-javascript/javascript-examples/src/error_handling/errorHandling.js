@@ -1,15 +1,15 @@
 // Error Handling
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
-let data = 4;
+let data = 4
 console.log(data.toPrecision(10))
 
 // Try catch blocks
 function tryExceptExample1() {
     try {
-        console.log(c + d);
+        console.log(c + d)
         // throw new ReferenceError();
-    } catch(err) {
-        console.log(err);
+    } catch (err) {
+        console.log(err)
     }
 }
 
@@ -20,7 +20,7 @@ booking. But there's a problem. If we pass in an argument
 that is not a number, we get weird and unexpected results.
 Let's refactor it to fix that!
 */
-function addTouristSurcharge(payment){
+function addTouristSurcharge(payment) {
     /*
     Task:
         1. Add a try block.
@@ -33,20 +33,19 @@ function addTouristSurcharge(payment){
 
     */
     try {
-        let testType = typeof payment;
-        if (typeof payment !== "number") {
-            throw ReferenceError("payment is not a number type.");
+        let testType = typeof payment
+        if (typeof payment !== 'number') {
+            throw ReferenceError('payment is not a number type.')
         } else {
-            console.log("payment is correctly a Number type.");
-            console.log(payment + 10);
+            console.log('payment is correctly a Number type.')
+            console.log(payment + 10)
         }
-    } catch(err) {
-        console.log(err);
+    } catch (err) {
+        console.log(err)
     }
-
 }
 
-function letterFinder(word, letterToMatch){
+function letterFinder(word, letterToMatch) {
     /*
     Task:
 
@@ -79,32 +78,32 @@ function letterFinder(word, letterToMatch){
     // Validate input
     try {
         if (typeof word !== 'string') {
-            throw TypeError("word must be String type.");
+            throw TypeError('word must be String type.')
         }
         if (typeof letterToMatch !== 'string') {
-            throw TypeError("letterToMatch must be String type.");
+            throw TypeError('letterToMatch must be String type.')
         }
         if (letterToMatch.length !== 1) {
-            throw TypeError("letterToMatch must be a String of length 1.");
+            throw TypeError('letterToMatch must be a String of length 1.')
         }
 
-        for (let i = 0; i < word.length; i++){
-            if(word[i] === letterToMatch){
-                console.log('Found the letter ' + letterToMatch + ' at index ' + i)
-            }
-            else {
+        for (let i = 0; i < word.length; i++) {
+            if (word[i] === letterToMatch) {
+                console.log(
+                    'Found the letter ' + letterToMatch + ' at index ' + i
+                )
+            } else {
                 console.log('No match found at index ' + i)
             }
         }
-    } catch(err) {
-        console.log(err);
+    } catch (err) {
+        console.log(err)
     }
-
 }
 
 // Run examples:
 // tryExceptExample1();
 // addTouristSurcharge('60');  // Error
 // addTouristSurcharge(Number('60'));
-letterFinder([6,7], 'o');  // Error
+letterFinder([6, 7], 'o') // Error
 letterFinder('dog', 'o')

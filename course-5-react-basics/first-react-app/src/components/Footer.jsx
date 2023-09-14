@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div className='copyright'>
+        <div className="copyright">
             <p>Made with love by Myself</p>
         </div>
     )

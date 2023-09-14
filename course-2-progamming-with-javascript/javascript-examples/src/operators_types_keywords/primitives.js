@@ -1,8 +1,8 @@
-var petDog = "Buddy";
-let dogSound = "ruff";
-console.log('My pet dog\'s name is:' , petDog, ". He makes the sound:", dogSound);
-dogSound = "bark";
-console.log(petDog, "now says", dogSound)
+var petDog = 'Buddy'
+let dogSound = 'ruff'
+console.log("My pet dog's name is:", petDog, '. He makes the sound:', dogSound)
+dogSound = 'bark'
+console.log(petDog, 'now says', dogSound)
 
 /*
     🐈 Pet Cat Simulator 🐈
@@ -26,36 +26,39 @@ console.log(petDog, "now says", dogSound)
 */
 // I.
 // 1.
-var petCat = "Colby";
+var petCat = 'Colby'
 // 2.
-console.log(petCat);
+console.log(petCat)
 // 3.
-var catSentenceFragment = "My pet cat's name is: ";
-console.log(catSentenceFragment + petCat + ".");
+var catSentenceFragment = "My pet cat's name is: "
+console.log(catSentenceFragment + petCat + '.')
 
 // II
 // 4.
-var catSound = "meow";
+var catSound = 'meow'
 // 5.
-console.log(petCat, "says", catSound + ".");
+console.log(petCat, 'says', catSound + '.')
 
 // III
 //6.
-catSound = "huff";
-var catAge = 1;
+catSound = 'huff'
+var catAge = 1
 //7.
-console.log(petCat, "now says", catSound + ". " + petCat + "'s age is " + catAge);
-const sym1 = Symbol(1);
-const sym2 = Symbol(1);
-console.log(sym1.valueOf(), sym2.valueOf(), sym1.valueOf() === sym2.valueOf());
-console.log(8 - 7.99);
-var myLongString = "hello" +
-    " how are you?";
-console.log(myLongString);
-console.log(Number("11") + 12);
-console.log("1" + 2);
-console.log(1 + "2");
-console.log(Number('1') + 2);
-var story = "Story 1"
-story += " is good."
+console.log(
+    petCat,
+    'now says',
+    catSound + '. ' + petCat + "'s age is " + catAge
+)
+const sym1 = Symbol(1)
+const sym2 = Symbol(1)
+console.log(sym1.valueOf(), sym2.valueOf(), sym1.valueOf() === sym2.valueOf())
+console.log(8 - 7.99)
+var myLongString = 'hello' + ' how are you?'
+console.log(myLongString)
+console.log(Number('11') + 12)
+console.log('1' + 2)
+console.log(1 + '2')
+console.log(Number('1') + 2)
+var story = 'Story 1'
+story += ' is good.'
 console.log(story)

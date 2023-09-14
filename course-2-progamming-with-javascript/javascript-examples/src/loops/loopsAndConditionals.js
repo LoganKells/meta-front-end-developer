@@ -30,15 +30,15 @@ Task 1: Working with if-else statements and loops
 */
 function exampleLoop1() {
     for (let i = 1; i <= 10; i++) {
-        let color;
+        let color
         if (i === 1 || i === 10) {
-            color = "white";
+            color = 'white'
         } else if (i % 2 === 0) {
-            color = "pink";
+            color = 'pink'
         } else {
-            color = "blue";
+            color = 'blue'
         }
-        console.log(`Placemat ${i}: ${color}`);
+        console.log(`Placemat ${i}: ${color}`)
     }
 }
 
@@ -66,26 +66,25 @@ Task 2: Working with switch statements and loops
   */
 function exampleLoop2() {
     for (let i = 1; i <= 8; i++) {
-        let syntax;
+        let syntax
         switch (i) {
             case 1:
-                syntax = "st";
-                break;
+                syntax = 'st'
+                break
             case 2:
-                syntax = "nd";
-                break;
+                syntax = 'nd'
+                break
             case 3:
-                syntax = "rd";
-                break;
+                syntax = 'rd'
+                break
             default:
-                syntax = "th";
-                break;
+                syntax = 'th'
+                break
         }
-        console.log(`${i}${syntax} place`);
+        console.log(`${i}${syntax} place`)
     }
 }
 
-
 // Call function examples.
 // exampleLoop1();
-exampleLoop2();
+exampleLoop2()

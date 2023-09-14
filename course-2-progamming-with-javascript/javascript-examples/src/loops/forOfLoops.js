@@ -4,7 +4,7 @@
 function forOfLoopExample1() {
     const employees = ['Wendy Smith', 'Dave Singh', 'Kerry West']
 
-    for (let i = 0; i < employees.length; i++){
+    for (let i = 0; i < employees.length; i++) {
         console.log(employees[i])
     }
 
@@ -18,7 +18,6 @@ function forOfLoopExample1() {
  * For of loop over object
  * */
 function forOfLoopExample2() {
-
     const employee1 = {
         name: 'Wendy Smith',
         dept: 'engineering',
@@ -30,25 +29,24 @@ function forOfLoopExample2() {
     //     console.log(key);
     // }
 
-    console.log("-------------")
+    console.log('-------------')
     // Log an array of keys
-    console.log(Object.keys(employee1));
+    console.log(Object.keys(employee1))
 
-    console.log("-------------")
+    console.log('-------------')
     for (let key of Object.keys(employee1)) {
-        console.log(key + ": " + employee1[key]);
+        console.log(key + ': ' + employee1[key])
     }
 
-    console.log("-------------")
+    console.log('-------------')
     for (let value of Object.values(employee1)) {
-        console.log(value);
+        console.log(value)
     }
 
-    console.log("-------------")
+    console.log('-------------')
     for (let entry of Object.entries(employee1)) {
-        console.log(entry);
+        console.log(entry)
     }
-
 }
 
 /**
@@ -68,34 +66,34 @@ function forOfLoopExample3() {
     }
 
     // 1. Log out an array of all of the keys.
-    console.log("1. -------------")
-    console.log(Object.keys(freelancerDev));
+    console.log('1. -------------')
+    console.log(Object.keys(freelancerDev))
 
     // 2. Log out an array of all of the values.
-    console.log("2. -------------")
-    console.log(Object.values(freelancerDev));
+    console.log('2. -------------')
+    console.log(Object.values(freelancerDev))
 
     // 3. Log out all of the keys and values. Each key/value
     //    pair should be in it's own array.
-    console.log("3. -------------")
+    console.log('3. -------------')
     for (let entry of Object.entries(freelancerDev)) {
-        console.log(entry);
+        console.log(entry)
     }
 
     // 4. Log out the key and value for each property as strings.
-    console.log("4. -------------");
+    console.log('4. -------------')
     for (let key of Object.keys(freelancerDev)) {
-        console.log(`${key}: ${freelancerDev[key]}`);
+        console.log(`${key}: ${freelancerDev[key]}`)
     }
-    console.log("Equivalently we can use an arrow function and the .forEach method...");
-    Object.keys(freelancerDev).forEach(
-        key => {
-            console.log(`${key}: ${freelancerDev[key]}`)
-        }
+    console.log(
+        'Equivalently we can use an arrow function and the .forEach method...'
     )
+    Object.keys(freelancerDev).forEach((key) => {
+        console.log(`${key}: ${freelancerDev[key]}`)
+    })
 }
 
 // Call loop examples
 // forOfLoopExample1();
 // forOfLoopExample2();
-forOfLoopExample3();
+forOfLoopExample3()

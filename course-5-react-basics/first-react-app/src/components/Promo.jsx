@@ -8,11 +8,7 @@ function Promo(props) {
     } else {
         message = <OfferDiscount />
     }
-    return (
-        <div className='promo-section'>
-            {message}
-        </div>
-    )
+    return <div className="promo-section">{message}</div>
 }
 
 export { Promo }

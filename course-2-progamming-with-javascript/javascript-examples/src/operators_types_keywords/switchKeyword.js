@@ -19,7 +19,7 @@ special. The schedule is as follows:
        output in the console.
  */
 
-var day = "Monday";
+var day = 'Monday'
 
 /* Test cases */
 //day = "Monday"; //expected result: "Chili Lime Tacos"
@@ -30,17 +30,16 @@ var day = "Monday";
 //day = "Saturday"; //expected result: "No daily special today."
 //day = "Sunday"; //expected result: "No daily special today."
 
-
 /* Write your code below here */
 
-switch(day) {
-    case "Monday":
-        console.log("Chili Lime Tacos");
-        break;
-    case "Tuesday":
-        console.log("Cauliflower Pizza");
-        break;
+switch (day) {
+    case 'Monday':
+        console.log('Chili Lime Tacos')
+        break
+    case 'Tuesday':
+        console.log('Cauliflower Pizza')
+        break
     default:
-        console.log("Invalid input");
-        break;
+        console.log('Invalid input')
+        break
 }

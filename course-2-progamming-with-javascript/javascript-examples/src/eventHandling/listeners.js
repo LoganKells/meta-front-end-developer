@@ -1,5 +1,5 @@
 function handleHeadingClick() {
-    console.log("Heading was clicked.");
+    console.log('Heading was clicked.')
 }
 
-export { handleHeadingClick };
+export { handleHeadingClick }

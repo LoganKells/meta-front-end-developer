@@ -3,7 +3,9 @@ function informalGreeting(name) {
 }
 
 function formalGreeting(name) {
-    console.log(`Good day to you ${name}, this is a formalGreeting() function call.`);
+    console.log(
+        `Good day to you ${name}, this is a formalGreeting() function call.`
+    )
 }
 
-export {informalGreeting, formalGreeting};
+export { informalGreeting, formalGreeting }

@@ -1,9 +1,9 @@
 // available t-shirt colors
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink']
 
 function listArrayItems(colors) {
     for (let i = 0; i < colors.length; i++) {
-        console.log(colors[i]);
+        console.log(colors[i])
     }
 }
 
@@ -16,15 +16,15 @@ Task:
 */
 function listSizes(colors) {
     function compareColorLengths(a, b) {
-        return b.length - a.length;
+        return b.length - a.length
     }
-    colors.sort(compareColorLengths);
-    let i = 0;
-    let currLength = colors[i].length;
+    colors.sort(compareColorLengths)
+    let i = 0
+    let currLength = colors[i].length
     while (currLength >= 6) {
         console.log(colors[i])
-        i++;
-        currLength = colors[i].length;
+        i++
+        currLength = colors[i].length
     }
 }
 
@@ -52,15 +52,14 @@ Task:
 function letterFinder(word, letterToMatch) {
     for (let i = 0; i < word.length; i++) {
         if (word[i] === letterToMatch) {
-            console.log(`Found the letter ${letterToMatch} at index ${i}`);
+            console.log(`Found the letter ${letterToMatch} at index ${i}`)
         } else {
-            console.log(`No match found at index ${i}`);
+            console.log(`No match found at index ${i}`)
         }
     }
 }
 
-
 // Call example functions.
 // listArrayItems(colors);
 // listSizes(colors);
-letterFinder('Giraffe', 'f');
+letterFinder('Giraffe', 'f')
