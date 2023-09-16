@@ -23,9 +23,11 @@ const desserts = [
  * Simple Food list
  * */
 function Food() {
+  // using React key to help React diff algorithm
+  // https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
   const listItems = desserts.map((dessert) => {
     const itemText = `${dessert.title} - ${dessert.price}`;
-    return <li>{itemText}</li>;
+    return <li key={dessert.id}>{itemText}</li>;
   });
   return <ul>{listItems}</ul>;
 }
