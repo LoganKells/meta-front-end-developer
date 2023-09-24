@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "../styles/App.css";
 import { Food } from "./Food";
+import { CommentForm } from "./CommentForm";
+import { ScoreForm } from "./ScoreForm";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,8 +18,10 @@ function App() {
         >
           Learn React
         </a>
+        <Food />
+        <CommentForm />
+        <ScoreForm />
       </header>
-      <Food />
     </div>
   );
 }
