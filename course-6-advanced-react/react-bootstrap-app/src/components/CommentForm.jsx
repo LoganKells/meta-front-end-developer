@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SubmitButton } from "./SubmitButton";
 
 function CommentForm() {
   const [value, setValue] = useState("");
@@ -18,14 +19,23 @@ function CommentForm() {
   return (
     <div className={"form"}>
       <form onSubmit={handleSubmit}>
-        <fieldset>
-          <div className={"comment"}>
-            <label htmlFor={"value"}>Enter Your Name: </label>
-            <textarea id="value" value={value} onChange={handleChange} />
+        <fieldset className={"inputFieldset"}>
+          <div>
+            <label htmlFor={"value"}>Leave a comment: </label>
           </div>
-          <button disabled={!value} type={"submit"}>
-            Submit
-          </button>
+          <div>
+            <textarea
+              className={"fieldsetContent"}
+              id="value"
+              value={value}
+              onChange={handleChange}
+            />
+          </div>
+          <SubmitButton
+            type={"submit"}
+            textValue={"Submit"}
+            disabled={!value}
+          />
         </fieldset>
       </form>
     </div>

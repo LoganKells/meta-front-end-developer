@@ -1,11 +1,11 @@
 .App {
-    text-align: center;
+    /*text-align: center;*/
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+/*.App-logo {*/
+/*    height: 40vmin;*/
+/*    pointer-events: none;*/
+/*}*/
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -20,27 +20,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
-.form {
+.inputFieldset {
+    min-width: 50vw;
+    margin: 20px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    min-width: 50vw;
-    min-height: 10vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center
 }
 
-.comment {
-    background-color: #282c34;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+
+.fieldsetContent {
+    min-width: 30vw;
+    margin: 8px;
 }
+
+/*.comment {*/
+/*    background-color: #282c34;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    font-size: calc(10px + 2vmin);*/
+/*    color: white;*/
+/*}*/
+
+/*.inputFieldset {*/
+
+
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    text-align: center*/
+/*}*/
+
 
 .App-link {
     color: #61dafb;
