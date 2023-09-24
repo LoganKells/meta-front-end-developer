@@ -61,7 +61,7 @@ function App() {
   }
 
   function handlePasswordChange(e) {
-    setPassword({ value: e.target.value, isTouched: true });
+    setPassword({ ...password, value: e.target.value });
     if (!getIsPasswordValid(e)) {
       return PasswordErrorMessage();
     }
@@ -129,6 +129,7 @@ function App() {
               placeholder="Password"
               value={password.value}
               onChange={handlePasswordChange}
+              onBlur={(e) => setPassword({ ...password, isTouched: true })}
             />
             {passwordWarning}
           </div>
