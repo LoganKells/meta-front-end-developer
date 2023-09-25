@@ -3,7 +3,7 @@ import { ThemeProvider, useTheme } from "./ThemeContext";
 import Switch from "./Switch";
 
 const Title = ({ children }) => {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
     <h2
       style={{
@@ -16,7 +16,7 @@ const Title = ({ children }) => {
 };
 
 const Paragraph = ({ children }) => {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
     <p
       style={{
@@ -34,8 +34,8 @@ const Content = () => {
       <Paragraph>
         We are a pizza loving family. And for years, I searched and searched and
         searched for the perfect pizza dough recipe. I tried dozens, or more.
-        And while some were good, none of them were that recipe that would
-        make me stop trying all of the others.
+        And while some were good, none of them were that recipe that would make
+        me stop trying all of the others.
       </Paragraph>
     </div>
   );
@@ -60,7 +60,7 @@ const Page = () => {
 };
 
 function App() {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
     <div
       className="App"
