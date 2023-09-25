@@ -9,6 +9,9 @@ const ThemeProvider = ({ children }) => {
   // Return a `ThemeContext.Provider` component that receives an object
   // as its value prop, with a `theme` string and a `toggleTheme` function
   return (
+    // https://react.dev/reference/react/createContext#provider
+    // Wrap your components into a context provider to specify
+    // the value of this context for all components inside:
     <ThemeContext.Provider
       value={{
         theme: theme,
