@@ -1,6 +1,7 @@
 import "./App.css";
 import { ThemeProvider, useTheme } from "./ThemeContext";
 import Switch from "./Switch";
+import { memo } from "react";
 
 const Title = ({ children }) => {
   const { theme, toggleTheme } = useTheme();
@@ -44,7 +45,7 @@ const Content = () => {
 const Header = () => {
   return (
     <header>
-      <Title>Little Lemon 🍕</Title>
+      <Title>Little Lemon</Title>
       <Switch />
     </header>
   );
@@ -59,7 +60,8 @@ const Page = () => {
   );
 };
 
-function App() {
+// using memoization: https://react.dev/reference/react/useMemo#skipping-re-rendering-of-components
+const App = memo(() => {
   const { theme, toggleTheme } = useTheme();
   return (
     <div
@@ -72,7 +74,7 @@ function App() {
       <Page />
     </div>
   );
-}
+});
 
 function Root() {
   return (
