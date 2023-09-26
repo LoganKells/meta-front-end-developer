@@ -60,7 +60,7 @@ const Page = () => {
   );
 };
 
-// using memoization: https://react.dev/reference/react/useMemo#skipping-re-rendering-of-components
+// using memoization: https://react.dev/reference/react/memo#memo
 const App = memo(() => {
   const { theme, toggleTheme } = useTheme();
   return (
