@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [data, setData] = useState({ id: 0, name: "Logan", lastName: "Kells" });
@@ -11,7 +11,11 @@ function App() {
       return { ...prevValue, id: clickCount };
     });
   }
-  console.log(data);
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
+
   return (
     <div className="App">
       <header className="App-header">
