@@ -10,11 +10,13 @@ export default function App() {
   });
 
   function spendGiftCard() {
-    setGiftCard({
-      ...giftCard,
-      valid: false,
-      text: "Your coupon has been used.",
-      instructions: "Please visit our restaurant to renew your gift card.",
+    setGiftCard((prev) => {
+      return {
+        ...prev,
+        valid: false,
+        text: "Your coupon has been used.",
+        instructions: "Please visit our restaurant to renew your gift card.",
+      };
     });
   }
 
