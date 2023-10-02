@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [giftCard, setGiftCard] = useState({
@@ -19,6 +19,10 @@ export default function App() {
       };
     });
   }
+
+  useEffect(() => {
+    document.title = giftCard.valid ? "Gift Available!" : "Welcome!";
+  }, [giftCard]);
 
   return (
     <div style={{ padding: "40px" }}>
