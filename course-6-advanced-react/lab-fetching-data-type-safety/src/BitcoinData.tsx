@@ -51,7 +51,7 @@ function BitcoinData() {
     disclaimer: "",
     time: { updated: "", updatedISO: "", updateduk: "" },
   });
-  function fetchData() {
+  async function fetchData() {
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
       .then((response) => response.json())
       .then((data) => setCoinData(data))
