@@ -76,3 +76,16 @@ console.log('a:', a, 'b:', b)
 let rest
 ;[a, b, ...rest] = [10, 20, 30, 40, 50]
 console.log('a:', a, 'b:', b, 'rest:', rest) // Array [30, 40, 50]
+
+// Destructuring values from an object
+console.log('------------ 5 ------------')
+var x = function ({ foo }) {
+    return { foo }
+}
+
+var y = {
+    bar: 'hello',
+    foo: 'Good bye',
+}
+console.log('x(y):', x(y))
+// Result: "Good bye"
