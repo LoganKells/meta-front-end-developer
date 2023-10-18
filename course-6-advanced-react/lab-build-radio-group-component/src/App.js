@@ -2,8 +2,12 @@ import "./App.css";
 import { RadioGroup, RadioOption } from "./Radio";
 import { useState } from "react";
 
+/**
+ * App displays a radio group built using component composition dynamically.
+ * */
 function App() {
   const [selected, setSelected] = useState("");
+  // console.log("selected:", selected);
   return (
     <div className="App">
       <h2>How did you hear about Little Lemon?</h2>
